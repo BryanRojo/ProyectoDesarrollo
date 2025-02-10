@@ -8,7 +8,7 @@ Este proyecto consiste en la creación y gestión de una base de datos para una 
 - **scripts**: Carpeta que contiene el archivo `operaciones_base_de_datos.sql` con todas las instrucciones SQL necesarias para crear y gestionar la base de datos.
 
 ## Diagrama de la Estructura de la Base de Datos
-![Diagrama](diagrams/diagrama_tienda_ropa.png)
+![Diagrama](diagrams/DiagramaTienda.png)
 
 ## Lista de Integrantes del Proyecto
 - Bryan Castro Castillo
