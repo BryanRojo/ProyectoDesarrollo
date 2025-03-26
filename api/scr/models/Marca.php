@@ -101,20 +101,5 @@ class Marca {
         }
     }
 
-    /**
-     * Obtiene todas las marcas que han realizado al menos una venta.
-     * 
-     * @return array Lista de marcas con ventas registradas.
-     */
-    public function obtenerMarcasConAlgunaVenta() {
-        try {
-            $stmt = $this->db->query("
-                SELECT nombre FROM marcasconventas;
-            ");
-            return $stmt->fetchAll(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            return ['error' => 'Error al obtener marcas con ventas: ' . $e->getMessage()];
-        }
-    }
 }
 ?>
