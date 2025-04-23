@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportes de Ventas y Stock</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Reportes de Ventas y Stock</h1>
+
+    <div id="notificacion"></div> <!-- Mensajes de estado -->
+
+    <h2>Marcas con Ventas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Marca</th>
+            </tr>
+        </thead>
+        <tbody id="marcasVentasTableBody">
+            <!-- Aquí se cargan las marcas con ventas dinámicamente -->
+        </tbody>
+    </table>
+
+    <h2>Prendas Vendidas y Stock Restante</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Prenda</th>
+                <th>Total Vendido</th>
+                <th>Stock Actual</th>
+            </tr>
+        </thead>
+        <tbody id="prendasStockTableBody">
+            <!-- Aquí se cargan las prendas vendidas y stock dinámicamente -->
+        </tbody>
+    </table>
+
+    <h2>Top 5 Marcas Más Vendidas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Total Vendido</th>
+            </tr>
+        </thead>
+        <tbody id="topMarcasTableBody">
+            <!-- Aquí se cargan las marcas más vendidas dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="js/reportes.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Marcas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Gestión de Marcas</h1>
+
+    <div id="notificacion"></div> <!-- Mensajes de estado -->
+
+    <!-- Botón para agregar una nueva marca -->
+    <button id="btnNuevaMarca">Agregar Nueva Marca</button>
+
+    <!-- Sección de formulario (oculta cuando no está en modo edición) -->
+    <div id="formularioMarca" style="display: none;">
+        <h2 id="tituloFormulario">Agregar Nueva Marca</h2>
+        <form id="marcaForm">
+            <input type="hidden" id="id" />
+            <label for="nombre">Nombre de la marca:</label>
+            <input type="text" id="nombre" required />
+            <button type="submit">Guardar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+        </form>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="marcaTableBody">
+            <!-- Aquí se cargan las marcas dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="js/marcas.js"></script>
+</body>
+</html>
